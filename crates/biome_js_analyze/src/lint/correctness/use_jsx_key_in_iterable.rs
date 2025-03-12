@@ -132,12 +132,6 @@ fn handle_iterators(node: &JsCallExpression, model: &SemanticModel) -> Option<Ve
             | "from"
             | "forEach"
             | "filter"
-            | "some"
-            | "every"
-            | "find"
-            | "findIndex"
-            | "reduce"
-            | "reduceRight"
     ) {
         return None;
     }
