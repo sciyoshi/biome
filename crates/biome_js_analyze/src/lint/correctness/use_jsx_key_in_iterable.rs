@@ -127,17 +127,7 @@ fn handle_iterators(node: &JsCallExpression, model: &SemanticModel) -> Option<Ve
 
     if !matches!(
         member_expression.member_name()?.text(),
-        "map"
-            | "flatMap"
-            | "from"
-            | "forEach"
-            | "filter"
-            | "some"
-            | "every"
-            | "find"
-            | "findIndex"
-            | "reduce"
-            | "reduceRight"
+        "map" | "flatMap" | "from" | "forEach" | "filter"
     ) {
         return None;
     }

@@ -101,3 +101,5 @@ React.Children.map(c => React.cloneElement(c, {key: c}));
   const content = <p>Paragraph</p>
   return (<div key={el}>{content}</div>);
 });
+
+[1, 2, 3].reduce((el, wrap) => (<div>{el} {wrap}</div>))
